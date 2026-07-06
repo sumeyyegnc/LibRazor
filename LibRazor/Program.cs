@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 namespace LibRazor
 {
     public class Program
@@ -8,6 +10,16 @@ namespace LibRazor
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            
+            QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Auth/Login";
+                    options.LogoutPath = "/Auth/Logout";
+                    options.Cookie.Name = "LibRazorAuth";
+                });
 
             var app = builder.Build();
 
@@ -24,6 +36,7 @@ namespace LibRazor
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapRazorPages();

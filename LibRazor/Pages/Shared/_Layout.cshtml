@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -32,7 +32,16 @@
         <ul class="sidebar-nav">
             <li class="sidebar-nav-item"><a href="/Yazarlar/Index">Yazar Listesi</a></li>
             <li class="sidebar-nav-item"><a href="/Kitaplar/Index">Kitap Listesi</a></li>
-          
+            
+            @if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                <li class="sidebar-nav-item"><a href="/Auth/Logout">Çıkış Yap (@User.Identity.Name)</a></li>
+            }
+            else
+            {
+                <li class="sidebar-nav-item"><a href="/Auth/Login">Giriş Yap</a></li>
+                <li class="sidebar-nav-item"><a href="/Auth/Register">Kayıt Ol</a></li>
+            }
         </ul>
     </nav>
 

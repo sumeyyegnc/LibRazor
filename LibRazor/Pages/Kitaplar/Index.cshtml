@@ -1,11 +1,13 @@
-﻿@page
+@page
 @model LibRazor.Pages.Kitaplar.IndexModel
 
 <h2>Kitap Listesi</h2>
 
-
-<a class="btn btn-primary btn-sm" href="/Kitaplar/Create">Kitap Ekle</a>
-
+<div class="mb-3">
+    <a class="btn btn-primary btn-sm" href="/Kitaplar/Create">Kitap Ekle</a>
+    <a class="btn btn-success btn-sm ms-2" href="/Kitaplar/Index?handler=ExportExcel">Excel İndir</a>
+    <a class="btn btn-danger btn-sm ms-2" href="/Kitaplar/Index?handler=ExportPdf">PDF İndir</a>
+</div>
 <table class="table table-striped">
     <thead>
         <tr>
