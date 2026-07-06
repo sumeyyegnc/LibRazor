@@ -1,138 +1,58 @@
 <div align="center">
-  
-# 📚 LibRazor - Library and Book Management System
-  
-A modern and dynamic library management platform built with **ASP.NET Core Razor Pages** and **ADO.NET**.
 
-[![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet)](https://dotnet.microsoft.com/)
-[![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/sql-server)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+# 📚 LibRazor
 
-[Features](#-features) • [Screenshots](#-screenshots) • [Installation](#-installation) • [Technologies](#-technologies)
+A simple **Library Management System** built with **ASP.NET Core Razor Pages**, **ADO.NET**, and **SQL Server**.
+
+![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 
 </div>
 
 ---
 
-## 💡 About The Project
+## 📖 About
 
-**LibRazor** is a comprehensive web application that allows you to easily manage your books and authors, as well as export system data. The project is designed to execute high-performance SQL queries using **ADO.NET** directly in the data access layer.
+LibRazor is a library management application developed with **ASP.NET Core Razor Pages**. It allows users to manage books and authors through a clean and responsive interface.
+
+---
 
 ## ✨ Features
 
-- 🔐 **Authentication:** Secure cookie-based login, registration, and session management.
-- 📖 **Book & Author Module:** Fast CRUD (Create, Read, Update, Delete) operations powered by ADO.NET infrastructure.
-- 🔍 **Dynamic Search:** Quick filtering across records.
-- 📊 **Advanced Export:**
-  - Download data in **Excel (.xlsx)** format with a single click *(using ClosedXML)*.
-  - Export data as professional-looking **PDF** documents *(using QuestPDF)*.
-- 🎨 **Modern Interface:** Fully responsive and stylish design built with Bootstrap 5 (Stylish Portfolio theme).
+- 🔐 User Authentication
+- 📚 Book Management (CRUD)
+- ✍️ Author Management (CRUD)
+- 🔍 Search Books and Authors
+- 📄 Export to PDF
+- 📊 Export to Excel
+- 📱 Responsive UI
 
----
-
-## 📸 Screenshots
-
-<details>
-<summary><b>1. Home Page</b></summary>
-<br>
-<img src="https://github.com/user-attachments/assets/22f4e824-b21d-4abd-9659-08ba5e902816" alt="Home Page" />
-</details>
-
-<details>
-<summary><b>2. Authentication (Login & Register)</b></summary>
-<br>
-
-<img src="https://github.com/user-attachments/assets/fcf82274-59b9-43d6-a0c8-53a3f84d280f" alt="Login Page" />
-
-</details>
-
-<details>
-<summary><b>3. Book Management (CRUD & Export)</b></summary>
-<br>
-
-<img src="https://github.com/user-attachments/assets/9fc529cd-f812-4429-acd1-e923dddd1c3e" alt="Books Index" />
-
-</details>
-
-<details>
-<summary><b>4. Author Management (CRUD)</b></summary>
-<br>
-
-<img src="https://github.com/user-attachments/assets/ddf7a2ea-b9bf-46f4-9d7f-2e0a87cfaadf" alt="Authors Index" />
-
-</details>
-
-<details>
-<summary><b>5. Reports</b></summary>
-<br>
-
-<img src="https://github.com/user-attachments/assets/f10227d5-d110-4559-ba7b-c83802745430" alt="Reports" />
-
-</details>
-
----
 
 ## 🛠 Technologies
 
-The following modern technologies and libraries were used during the development process:
+- ASP.NET Core Razor Pages (.NET 8)
+- C#
+- ADO.NET
+- SQL Server
+- Bootstrap 5
+- ClosedXML
+- QuestPDF
 
-| Category | Technology / Library |
-|---|---|
-| **Backend** | `C#`, `ASP.NET Core Razor Pages (.NET 8)` |
-| **Database** | `MS SQL Server` (LocalDB) |
-| **Data Access** | `ADO.NET` (`Microsoft.Data.SqlClient`) |
-| **Frontend** | `HTML5`, `CSS3`, `Bootstrap 5`, `Font Awesome` |
-| **Tools / Libraries** | `ClosedXML` (Excel), `QuestPDF` (PDF) |
+## 📸 Screenshots
 
----
+### Home
+<img width="1920" height="1080" alt="Ekran Görüntüsü (104)" src="https://github.com/user-attachments/assets/5cc9fb9f-5084-4eb6-932e-de7102b776aa" />
 
-## ⚙️ Installation (Local Development)
+### Login
+<img width="1920" height="1080" alt="Ekran Görüntüsü (108)" src="https://github.com/user-attachments/assets/5355be0b-694b-48c6-92b9-2433b5e8d909" />
 
-Follow these steps to run the project on your local machine.
+### Books
+<img width="1920" height="1080" alt="Ekran Görüntüsü (106)" src="https://github.com/user-attachments/assets/bca865b1-fe6b-4523-b6c6-2a6ac41c302d" />
 
-### Prerequisites
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- SQL Server (or LocalDB)
+### Authors
+<img width="1920" height="1080" alt="Ekran Görüntüsü (108)" src="https://github.com/user-attachments/assets/090070e3-0ea8-47bf-85fe-b4e34c69a606" />
 
-### Steps
+###Report
+<img width="1920" height="1080" alt="Ekran Görüntüsü (107)" src="https://github.com/user-attachments/assets/a69a84d0-91d7-4803-ae4c-8ca55e743d27" />
 
-1. **Clone the Repository**
-   ```bash
-   git clone <repo-url>
-   cd LibRazor
-   ```
-
-2. **Prepare the Database**
-   Run the following script to create a database named `LibRazorDb` and its tables on SQL Server:
-   <details>
-   <summary><b>Show SQL Script</b></summary>
-   
-   ```sql
-   CREATE DATABASE LibRazorDb;
-   GO
-   USE LibRazorDb;
-   GO
-   
-   -- Users Table
-   CREATE TABLE Kullanicilar (
-       Id INT IDENTITY(1,1) PRIMARY KEY,
-       AdSoyad NVARCHAR(100),
-       Email NVARCHAR(100) UNIQUE,
-       Sifre NVARCHAR(255)
-   );
-   
-   -- Your table creation scripts for Books and Authors...
-   ```
-   </details>
-
-3. **Install Packages**
-   ```bash
-   dotnet restore
-   ```
-
-4. **Run the Project**
-   ```bash
-   dotnet run
-   ```
-   Open your browser and navigate to `https://localhost:<port>` to start using the application.
