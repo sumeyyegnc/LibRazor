@@ -33,21 +33,17 @@ A modern and dynamic library management platform built with **ASP.NET Core Razor
 
 ## 📸 Screenshots
 
-> **Note:** After running the application, you can drag and drop your screenshots or GIFs here to make your README more vibrant.
-
 <details>
 <summary><b>1. Home Page</b></summary>
 <br>
-<img src="https://via.placeholder.com/800x400.png?text=Home+Page" alt="Home Page" />
+<img src="https://github.com/user-attachments/assets/22f4e824-b21d-4abd-9659-08ba5e902816" alt="Home Page" />
 </details>
 
 <details>
 <summary><b>2. Authentication (Login & Register)</b></summary>
 <br>
 
-| Login | Register |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/400x250.png?text=Login+Page" alt="Login" /> | <img src="https://via.placeholder.com/400x250.png?text=Register+Page" alt="Register" /> |
+<img src="https://github.com/user-attachments/assets/fcf82274-59b9-43d6-a0c8-53a3f84d280f" alt="Login Page" />
 
 </details>
 
@@ -55,13 +51,7 @@ A modern and dynamic library management platform built with **ASP.NET Core Razor
 <summary><b>3. Book Management (CRUD & Export)</b></summary>
 <br>
 
-| Books List (Index) | Add New Book (Create) |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/400x250.png?text=Books+List" alt="Books Index" /> | <img src="https://via.placeholder.com/400x250.png?text=Create+Book" alt="Book Create" /> |
-
-| Edit Book (Edit) | Delete Book (Delete) |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/400x250.png?text=Edit+Book" alt="Book Edit" /> | <img src="https://via.placeholder.com/400x250.png?text=Delete+Book" alt="Book Delete" /> |
+<img src="https://github.com/user-attachments/assets/9fc529cd-f812-4429-acd1-e923dddd1c3e" alt="Books Index" />
 
 </details>
 
@@ -69,13 +59,15 @@ A modern and dynamic library management platform built with **ASP.NET Core Razor
 <summary><b>4. Author Management (CRUD)</b></summary>
 <br>
 
-| Authors List (Index) | Add New Author (Create) |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/400x250.png?text=Authors+List" alt="Authors Index" /> | <img src="https://via.placeholder.com/400x250.png?text=Create+Author" alt="Author Create" /> |
+<img src="https://github.com/user-attachments/assets/ddf7a2ea-b9bf-46f4-9d7f-2e0a87cfaadf" alt="Authors Index" />
 
-| Edit Author (Edit) | Delete Author (Delete) |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/400x250.png?text=Edit+Author" alt="Author Edit" /> | <img src="https://via.placeholder.com/400x250.png?text=Delete+Author" alt="Author Delete" /> |
+</details>
+
+<details>
+<summary><b>5. Reports</b></summary>
+<br>
+
+<img src="https://github.com/user-attachments/assets/f10227d5-d110-4559-ba7b-c83802745430" alt="Reports" />
 
 </details>
 
