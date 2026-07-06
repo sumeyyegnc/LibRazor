@@ -16,7 +16,7 @@ A simple **Library Management System** built with **ASP.NET Core Razor Pages**, 
 
 LibRazor is a library management application developed with **ASP.NET Core Razor Pages**. It allows users to manage books and authors through a clean and responsive interface.
 
----
+
 
 ## ✨ Features
 
@@ -28,7 +28,17 @@ LibRazor is a library management application developed with **ASP.NET Core Razor
 - 📊 Export to Excel
 - 📱 Responsive UI
 
----
+
+## 🛠 Technologies
+
+- ASP.NET Core Razor Pages (.NET 8)
+- C#
+- ADO.NET
+- SQL Server
+- Bootstrap 5
+- ClosedXML
+- QuestPDF
+
 
 ## 📸 Screenshots
 
@@ -48,12 +58,3 @@ LibRazor is a library management application developed with **ASP.NET Core Razor
 <img width="1920" height="1080" alt="Ekran Görüntüsü (107)" src="https://github.com/user-attachments/assets/f10227d5-d110-4559-ba7b-c83802745430" />
 
 
-## 🛠 Technologies
-
-- ASP.NET Core Razor Pages (.NET 8)
-- C#
-- ADO.NET
-- SQL Server
-- Bootstrap 5
-- ClosedXML
-- QuestPDF
