@@ -1,0 +1,80 @@
+﻿@page
+@model LibRazor.Pages.Kitaplar.EditModel
+
+<h2>Kitap Güncelleme</h2>
+
+@if (!string.IsNullOrEmpty(Model.errorMessage))
+{
+    <div class="alert alert-warning">
+        @Model.errorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.successMessage))
+{
+    <div class="alert alert-success">
+        @Model.successMessage
+    </div>
+}
+
+<form method="post">
+
+    <!-- ID (hidden) -->
+    <input type="hidden" name="KitapId" value="@Model.kitapbilgi.KitapId" />
+
+    <!-- Kitap Adı -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Kitap Adı</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="KitapAdi"
+                   value="@Model.kitapbilgi.KitapAdi" />
+        </div>
+    </div>
+
+    <!-- Fiyat -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Fiyat</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="Fiyat"
+                   value="@Model.kitapbilgi.Fiyat" />
+        </div>
+    </div>
+
+    <!-- Sayfa Sayısı -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Sayfa Sayısı</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="SayfaSayisi"
+                   value="@Model.kitapbilgi.SayfaSayisi" />
+        </div>
+    </div>
+
+    <!-- Yayınevi -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Yayınevi</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="Yayinevi"
+                   value="@Model.kitapbilgi.Yayinevi" />
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Kitaplar/Index">İptal</a>
+        </div>
+    </div>
+
+</form>

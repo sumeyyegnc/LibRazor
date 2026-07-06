@@ -1,0 +1,43 @@
+﻿@page
+@model LibRazor.Pages.Yazarlar.IndexModel
+
+<h2>Yazar Listesi</h2>
+
+<a class="btn btn-primary btn-sm" href="/Yazarlar/Create">Yazar Ekle</a>
+
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Yazar Id</th>
+            <th>Ad Soyad</th>
+            <th>Doğum Tarihi</th>
+            <th>Ülke</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.listele)
+        {
+            <tr>
+                <td>@item.YazarId</td>
+                <td>@item.AdSoyad</td>
+                <td>
+                    @(item.DogumYili.HasValue
+                                    ? item.DogumYili.Value.ToString("yyyy-MM-dd")
+                                    : "")
+            </td>
+            <td>@item.Ulke</td>
+            <td>
+                <a class="btn btn-warning btn-sm"
+                   href="/Yazarlar/Edit?id=@item.YazarId">Edit</a>
+
+                    <a class="btn btn-danger btn-sm"
+                       href="/Yazarlar/Delete?id=@item.YazarId">Delete</a>
+                </td>
+            </tr>
+                }
+    </tbody>
+
+</table>

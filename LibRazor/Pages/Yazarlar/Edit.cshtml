@@ -1,0 +1,69 @@
+﻿@page
+@model LibRazor.Pages.Yazarlar.EditModel
+
+<h2>Yazar Güncelleme</h2>
+
+@if (!string.IsNullOrEmpty(Model.errorMessage))
+{
+    <div class="alert alert-warning">
+        @Model.errorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.successMessage))
+{
+    <div class="alert alert-success">
+        @Model.successMessage
+    </div>
+}
+
+<form method="post">
+
+    <!-- ID (hidden) -->
+    <input type="hidden" name="YazarId" value="@Model.yazarbilgi.YazarId" />
+
+    <!-- Ad Soyad -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Ad Soyad</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="AdSoyad"
+                   value="@Model.yazarbilgi.AdSoyad" />
+        </div>
+    </div>
+
+    <!-- Doğum Yılı -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Doğum Yılı</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="DogumYili"
+                   value="@Model.yazarbilgi.DogumYili" />
+        </div>
+    </div>
+
+    <!-- Ülke -->
+    <div class="row mb-3">
+        <label class="col-sm-3">Ülke</label>
+        <div class="col-sm-6">
+            <input type="text"
+                   class="form-control"
+                   name="Ulke"
+                   value="@Model.yazarbilgi.Ulke" />
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Yazarlar/Index">İptal</a>
+        </div>
+    </div>
+
+</form>
